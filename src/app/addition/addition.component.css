@@ -1,0 +1,61 @@
+
+.container {
+    background-color: #ffffff; /* White background for the calculator */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    padding: 20px 30px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #4a4a4a; /* Darker text for the title */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    border: 2px solid #bb86fc; /* Border color */
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for focus effects */
+}
+
+input[type="number"]:focus {
+    border-color: #6200ea; /* Focus border color */
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.5); /* Glow effect on focus */
+    outline: none; /* Remove default outline */
+}
+
+.calc-button {
+    background-color: #6200ea; /* Button background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for buttons */
+    margin: 5px; /* Margin around buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for hover effects */
+}
+
+.calc-button:hover {
+    background-color: #3700b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.calc-button:active {
+    transform: translateY(1px); /* Slight dip on click */
+}
+
+h2 {
+    margin-top: 20px;
+    color: #4a4a4a; /* Darker text for results */
+}

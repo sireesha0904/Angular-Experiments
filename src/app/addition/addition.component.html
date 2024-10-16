@@ -1,1 +1,21 @@
-<p>addition works!</p>
+<div class="container">
+    <h1>Simple Calculator</h1>
+  
+    <div>
+      <label for="number1">Enter Number 1:</label>
+      <input type="number" id="number1" #num1 />
+    </div>
+  
+    <div>
+      <label for="number2">Enter Number 2:</label>
+      <input type="number" id="number2" #num2 />
+    </div>
+    <div>
+      <button (click)="calculate('add', num1.value, num2.value)" class="calc-button">Add</button>
+      <button (click)="calculate('subtract', num1.value, num2.value)" class="calc-button">Subtract</button>
+      <button (click)="calculate('multiply', num1.value, num2.value)" class="calc-button">Multiply</button>
+      <button (click)="calculate('divide', num1.value, num2.value)" class="calc-button">Divide</button>
+    </div>
+    <h2>Result: {{ result }}</h2>
+  </div>
+  
