@@ -1,0 +1,18 @@
+<div [ngStyle]="{'color': getColor()}">
+    This div has a dynamic background color based on user role.
+  </div>
+  
+  <div class="role-container">
+    @if (role === 1) {
+      <h1 [ngStyle]="{'color': 'green'}">User role is admin</h1>
+    } @else if (role === 2) {
+      <h1 [ngStyle]="{'color': 'blue'}">User role is faculty</h1>
+    } @else if (role === 3) {
+      <h1 [ngStyle]="{'color': 'orange'}">User role is student</h1>
+    } @else if (role === 4) {
+      <h1 [ngStyle]="{'color': 'purple'}">User role is Employee</h1>
+    } @else {
+      <h1 [ngStyle]="{'color': 'red'}">Choose a different option</h1>
+    }
+  </div>
+  

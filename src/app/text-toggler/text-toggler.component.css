@@ -1,0 +1,51 @@
+.text-toggler-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto; 
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .text-toggler-container:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0; 
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+  }
+  
+  button {
+    background-color: #4e54c8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3b43a1;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  

@@ -1,0 +1,53 @@
+<div class="student-container">
+  <h3>Student List</h3>
+  <table class="student-list">
+    <thead>
+      <tr>
+        <th>Roll Number</th>
+        <th>Student Name</th>
+        <th>Marks</th>
+        <th>Subject</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{ student.rollNumber }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.marks }}</td>
+        <td>{{ student.subject }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="menu">
+    <label for="rollNumber">Select Roll Number:</label>
+    <select id="rollNumber" (change)="onSelectRollNumber($event)">
+      <option value="" disabled selected>Select a roll number</option>
+      <option *ngFor="let student of students" [value]="student.rollNumber">
+        {{ student.rollNumber }}
+      </option>
+    </select>
+  </div>
+
+  <div class="student-details" *ngIf="selectedStudent">
+    <h3>Selected Student Details</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Roll Number</th>
+          <th>Student Name</th>
+          <th>Marks</th>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ selectedStudent.rollNumber }}</td>
+          <td>{{ selectedStudent.name }}</td>
+          <td>{{ selectedStudent.marks }}</td>
+          <td>{{ selectedStudent.subject }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

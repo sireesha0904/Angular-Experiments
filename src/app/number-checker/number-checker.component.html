@@ -1,0 +1,9 @@
+<div class="number-checker-container">
+    <input type="number" [(ngModel)]="number1" placeholder="Enter first number" />
+    <input type="number" [(ngModel)]="number2" placeholder="Enter second number" />
+    <button *ngIf="(number1 === 10 && number2 === 20) || (number1 === 20 && number2 === 10)">Good</button>
+    <p *ngIf="!(number1 === 10 && number2 === 20) && !(number1 === 20 && number2 === 10)">
+    Try again
+    </p>
+  </div>
+  

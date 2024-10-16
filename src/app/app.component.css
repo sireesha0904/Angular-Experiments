@@ -1,0 +1,31 @@
+/* General styles for task container */
+.task-container {
+  display: flex;
+  flex-direction: column; /* Align tasks vertically */
+  align-items: flex-start; /* Align all items to the left */
+  gap: 20px; /* Space between each task */
+  width: 100%; /* Full width of the container */
+  padding: 20px; /* Padding around the container */
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+/* Style for each individual component/task */
+.task-container > * {
+  width: 100%; /* Ensure each task takes the full width */
+  padding: 10px; /* Padding for each component */
+  border: 1px solid #ddd; /* Optional border for task separation */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background for tasks */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+/* Additional style for the student details component if needed */
+app-student-details-component {
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

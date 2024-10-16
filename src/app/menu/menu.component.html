@@ -1,0 +1,15 @@
+
+<div class="menu">
+    <h2>Select a Programming Language</h2>
+    <select [(ngModel)]="selectedLanguage"> 
+      <option value="">-- Select a Language --</option>
+      <option *ngFor="let language of programmingLanguages" [value]="language">
+        {{ language }}
+      </option>
+    </select>
+  
+    <div class="selected-language" *ngIf="selectedLanguage">
+      <h3>You selected: {{ selectedLanguage }}</h3>
+    </div>
+  </div>
+  
