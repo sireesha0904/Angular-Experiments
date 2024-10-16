@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class PracticeComponent {
 
+  title : string = "Hello Angular!"
+  user = {name : "Sireesha" , age : 20}
 }
