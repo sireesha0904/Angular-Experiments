@@ -7,10 +7,12 @@ import { TextTogglerComponent } from './text-toggler/text-toggler.component';
 import { StudentDetailsComponentComponent } from './student-details-component/student-details-component.component';
 import { LoginCheckComponent } from "./login-check/login-check.component";
 import { AdditionComponent } from "./addition/addition.component";
+import { ParentComponent } from './parent/parent.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FormComponent, MenuComponent, LoginComponent, NumberCheckerComponent, TextTogglerComponent, StudentDetailsComponentComponent, LoginCheckComponent, AdditionComponent], 
+  imports: [FormComponent, MenuComponent, LoginComponent, NumberCheckerComponent, TextTogglerComponent, StudentDetailsComponentComponent, LoginCheckComponent, AdditionComponent,ParentComponent], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
