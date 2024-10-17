@@ -8,11 +8,11 @@ import { StudentDetailsComponentComponent } from './student-details-component/st
 import { LoginCheckComponent } from "./login-check/login-check.component";
 import { AdditionComponent } from "./addition/addition.component";
 import { ParentComponent } from './parent/parent.component';
-
+import { DirectivesComponent } from './directives/directives.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FormComponent, MenuComponent, LoginComponent, NumberCheckerComponent, TextTogglerComponent, StudentDetailsComponentComponent, LoginCheckComponent, AdditionComponent,ParentComponent], 
+  imports: [FormComponent, MenuComponent, LoginComponent, NumberCheckerComponent, TextTogglerComponent, StudentDetailsComponentComponent, LoginCheckComponent, AdditionComponent,ParentComponent,DirectivesComponent], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

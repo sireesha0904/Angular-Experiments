@@ -1,0 +1,19 @@
+<div style="text-align:center">
+    <h1>Angular ngIf Example</h1>
+
+    <!-- Button to toggle the message -->
+    <button (click)="toggleDetails()">
+      {{ showDetails ? 'Hide Details' : 'Show Details' }}
+    </button>
+  
+    <!-- The paragraph element will be shown/hidden based on showDetails -->
+    <p *ngIf="showDetails">Welcome back, User!</p>
+  </div>
+
+  <!-- Use *ngFor to loop through the 'users' array and display each user -->
+  <div>
+    <h3>Student List</h3>
+  <ul>
+    <li *ngFor = "let Students of Students" >{{Students }}</li>
+  </ul>
+</div>

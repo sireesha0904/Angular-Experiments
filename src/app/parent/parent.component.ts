@@ -8,7 +8,7 @@ import { ChildComponent } from '../child/child.component';
   styleUrl: './parent.component.css'
 })
 export class ParentComponent {
-  parentMessage: string = 'Message from Parent';
+  parentMessage: string = 'Message from Parent to Child';
   messageFromChild: string = '';
 
   receiveMessage(event: string) {
