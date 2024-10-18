@@ -6,12 +6,12 @@ import { Cricketer } from '../model/cricketer.model'; // Import the Cricketer mo
 @Component({
   selector: 'app-cricketer-detail',
   standalone: true,
-  imports: [CommonModule, FormsModule], // Import FormsModule for two-way binding
+  imports: [CommonModule, FormsModule], 
   templateUrl: './cricketer-detail.component.html',
   styleUrls: ['./cricketer-detail.component.css']
 })
 export class CricketerDetailComponent {
-  @Input() cricketer: Cricketer | null = null;
+  @Input() cricketer: Cricketer | null = null;  
   @Output() updateCricketerEvent = new EventEmitter<Cricketer>();
 
   onUpdate() {

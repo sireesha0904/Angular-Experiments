@@ -16,7 +16,10 @@ export class DirectivesComponent {
     this.showDetails =!this.showDetails;
   }
  
-  Students = ["Sireesha", "Gayatri", "Kishore"]
+  Students = ["Sireesha", "Gayatri", "Kishore"] 
+  textcolor : string = "blue";
 
-  color : string = "red";
+  changeColor(){
+    this.textcolor = this.textcolor === "blue" ? "red" : "green";
+  }
 }

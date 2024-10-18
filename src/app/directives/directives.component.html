@@ -12,8 +12,13 @@
 
   <!-- Use *ngFor to loop through the 'users' array and display each user -->
   <div>
-    <h3>Student List</h3>
+    <h3 [ngStyle]="{'color': 'red'}">Student List</h3>
   <ul>
     <li *ngFor = "let Students of Students" >{{Students }}</li>
   </ul>
+</div>
+
+<div>
+  <h1 [ngStyle]="{'color':textcolor}"> Hello !</h1>
+  <button (click)="changeColor()">Change the color here</button>
 </div>
