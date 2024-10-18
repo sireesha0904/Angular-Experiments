@@ -11,10 +11,11 @@ import { ParentComponent } from './parent/parent.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { CricketerDetailComponent } from './cricketer-detail/cricketer-detail.component';
 import { CricketerListComponent } from './cricketer-list/cricketer-list.component';
+import { ViewChildComponent } from "./view-child/view-child.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FormComponent, MenuComponent, LoginComponent, NumberCheckerComponent,CricketerDetailComponent,CricketerListComponent, TextTogglerComponent, StudentDetailsComponentComponent, LoginCheckComponent, AdditionComponent,ParentComponent,DirectivesComponent], 
+  imports: [FormComponent, MenuComponent, LoginComponent, NumberCheckerComponent, CricketerDetailComponent, CricketerListComponent, TextTogglerComponent, StudentDetailsComponentComponent, LoginCheckComponent, AdditionComponent, ParentComponent, DirectivesComponent, ViewChildComponent], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
