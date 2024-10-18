@@ -1,0 +1,22 @@
+    <h3>Cricketer Details</h3>
+    <div *ngIf="cricketer">
+    <label>No: </label>
+    <input type="text" [(ngModel)]="cricketer.no" disabled /><br>
+
+    <label>Name: </label>
+    <input type="text" [(ngModel)]="cricketer.name" /><br>
+
+    <label>Address: </label>
+    <input type="text" [(ngModel)]="cricketer.address" /><br>
+
+    <label>City: </label>
+    <input type="text" [(ngModel)]="cricketer.city" /><br>
+
+    <label>State: </label>
+    <input type="text" [(ngModel)]="cricketer.state" /><br>
+
+    <label>Country: </label>
+    <input type="text" [(ngModel)]="cricketer.country" /><br>
+
+    <button (click)="onUpdate()">Update</button>
+    </div>
