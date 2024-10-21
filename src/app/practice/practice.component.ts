@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-practice',
   standalone: true,
-  imports: [],
+  imports: [FormsModule,CommonModule],
   templateUrl: './practice.component.html',
   styleUrl: './practice.component.css'
 })
@@ -19,5 +20,12 @@ export class PracticeComponent {
 
   onButtonClick() {
     this.message = "Button is Clicked";
+  }
+
+
+  isActive : boolean = false;
+
+  toggleActive () {
+    this.isActive =!this.isActive;
   }
 }

@@ -9,5 +9,15 @@
 <button [disabled]="isButtonDisble">Click me</button>
 
 <!-- Event Binding -->
-<button (click)=" onButtonClick()">(click)=""</button>
+<button (click)=" onButtonClick()">Event Click</button>
 <p>{{message}}</p>
+
+<!-- ngClass Directive-->
+<div>
+    <button [ngClass]="{'active': isActive, 'inactive': !isActive}"  (click)="toggleActive()">Click Me</button>
+
+    <p [ngClass]="{'highlight': isActive}">
+        This paragraph will be highlighted when the button is active.
+      </p>
+</div>
+
