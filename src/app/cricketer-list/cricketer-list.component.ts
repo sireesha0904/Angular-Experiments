@@ -38,3 +38,4 @@ export class CricketerListComponent {
     this.selectedCricketer = null;
   }
 }
+//parent Component which contains the data and send to the child Component.
