@@ -1,7 +1,7 @@
 <nav class="navbar">
   <div class="navbar-container">
     <div class="navbar-logo">
-      <a routerLink="/">MyApp</a>
+      <a routerLink="/">MyApp</a> <!-- This remains as is -->
     </div>
     <div class="navbar-menu-toggle" (click)="toggleMenu()">
       <span class="bar"></span>
@@ -10,7 +10,7 @@
     </div>
     <ul class="navbar-menu" [class.active]="menuOpen">
       <li class="navbar-item">
-        <a class="navbar-link" routerLink="/home">Home</a>
+        <a class="navbar-link" routerLink="/">Home</a> <!-- Change this -->
       </li>
       <li class="navbar-item">
         <a class="navbar-link" routerLink="/about">About</a>
