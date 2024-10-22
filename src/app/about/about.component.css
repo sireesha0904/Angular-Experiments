@@ -1,0 +1,15 @@
+.about-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-container h1 {
+    font-size: 28px;
+    color: #343a40; /* Dark color */
+  }
+  
+  .about-container p {
+    font-size: 18px;
+    color: #6c757d; /* Grey color */
+  }
+  
