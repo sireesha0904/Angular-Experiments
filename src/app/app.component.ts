@@ -14,12 +14,15 @@ import { CricketerListComponent } from './cricketer-list/cricketer-list.componen
 import { ViewChildComponent } from "./view-child/view-child.component";
 import { PracticeComponent } from "./practice/practice.component";
 import { NavbarComponent } from "./navbar/navbar.component";
-import { RouterModule } from '@angular/router'; 
+import { RouterModule, RouterOutlet } from '@angular/router'; 
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FormComponent, RouterModule,MenuComponent, LoginComponent, NumberCheckerComponent, CricketerDetailComponent, CricketerListComponent, TextTogglerComponent, StudentDetailsComponentComponent, LoginCheckComponent, AdditionComponent, ParentComponent, DirectivesComponent, ViewChildComponent, PracticeComponent, NavbarComponent], 
+  imports: [FormComponent, RouterModule, RouterOutlet, MenuComponent, LoginComponent, NumberCheckerComponent, CricketerDetailComponent, CricketerListComponent, TextTogglerComponent, StudentDetailsComponentComponent, LoginCheckComponent, AdditionComponent, ParentComponent, DirectivesComponent, ViewChildComponent, PracticeComponent, NavbarComponent], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {}
+export class AppComponent {
+
+}
