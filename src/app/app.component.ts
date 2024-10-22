@@ -15,11 +15,11 @@ import { ViewChildComponent } from "./view-child/view-child.component";
 import { PracticeComponent } from "./practice/practice.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { RouterModule } from '@angular/router'; 
-
+import { AppRoutingModule } from '../app/app.routes'; 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FormComponent, RouterModule,MenuComponent, LoginComponent, NumberCheckerComponent, CricketerDetailComponent, CricketerListComponent, TextTogglerComponent, StudentDetailsComponentComponent, LoginCheckComponent, AdditionComponent, ParentComponent, DirectivesComponent, ViewChildComponent, PracticeComponent, NavbarComponent], 
+  imports: [FormComponent, RouterModule,MenuComponent,AppRoutingModule, LoginComponent, NumberCheckerComponent, CricketerDetailComponent, CricketerListComponent, TextTogglerComponent, StudentDetailsComponentComponent, LoginCheckComponent, AdditionComponent, ParentComponent, DirectivesComponent, ViewChildComponent, PracticeComponent, NavbarComponent], 
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
