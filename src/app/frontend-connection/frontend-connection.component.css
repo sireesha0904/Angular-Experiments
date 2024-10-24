@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 20px;
+  }
+  
+  h2, h3 {
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  form button:hover {
+    background-color: #218838;
+  }
+  
+  form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f8f8f8;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button.edit {
+    background-color: #ffc107;
+  }
+  
+  button.edit:hover {
+    background-color: #e0a800;
+  }
+  
+  button.delete {
+    background-color: #dc3545;
+  }
+  
+  button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  /* Edit Form Styling */
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .edit-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .edit-form button {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .edit-form button:hover {
+    background-color: #138496;
+  }
+  
+  .edit-form .cancel-btn {
+    background-color: #6c757d;
+  }
+  
+  .edit-form .cancel-btn:hover {
+    background-color: #5a6268;
+  }
+  

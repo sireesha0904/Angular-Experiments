@@ -1,1 +1,58 @@
-<p>frontend-connection works!</p>
+<h2>Employee Management</h2>
+
+<!-- Add Employee Form -->
+<h3>Add New Employee</h3>
+<form (submit)="addEmployee()">
+  <label for="name">Name:</label>
+  <input id="name" [(ngModel)]="newEmployee.name" name="name" required>
+
+  <label for="position">Position:</label>
+  <input id="position" [(ngModel)]="newEmployee.position" name="position" required>
+
+  <label for="salary">Salary:</label>
+  <input id="salary" type="number" [(ngModel)]="newEmployee.salary" name="salary" required>
+
+  <button type="submit">Add Employee</button>
+</form>
+
+<!-- Employee List Table -->
+<h3>Employee List</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Salary</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.position }}</td>
+      <td>{{ employee.salary }}</td>
+      <td>
+        <button class="edit" (click)="editEmployee(employee)">Edit</button>
+        <button class="delete" (click)="deleteEmployee(employee.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Edit Employee Form -->
+<div *ngIf="editingEmployee" class="edit-form">
+  <h3>Edit Employee</h3>
+  <form (submit)="updateEmployee()">
+    <label for="editName">Name:</label>
+    <input id="editName" [(ngModel)]="editingEmployee.name" name="editName" required>
+
+    <label for="editPosition">Position:</label>
+    <input id="editPosition" [(ngModel)]="editingEmployee.position" name="editPosition" required>
+
+    <label for="editSalary">Salary:</label>
+    <input id="editSalary" type="number" [(ngModel)]="editingEmployee.salary" name="editSalary" required>
+
+    <button type="submit">Update Employee</button>
+    <button type="button" class="cancel-btn" (click)="editingEmployee = null">Cancel</button>
+  </form>
+</div>
