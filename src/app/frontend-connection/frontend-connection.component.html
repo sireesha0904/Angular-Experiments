@@ -1,23 +1,29 @@
-<h2>Employee Management</h2>
+<h2 class="title">Employee Management</h2>
 
 <!-- Add Employee Form -->
-<h3>Add New Employee</h3>
-<form (submit)="addEmployee()">
-  <label for="name">Name:</label>
-  <input id="name" [(ngModel)]="newEmployee.name" name="name" required>
+<h3 class="subtitle">Add New Employee</h3>
+<form class="employee-form" (submit)="addEmployee()">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input id="name" [(ngModel)]="newEmployee.name" name="name" required>
+  </div>
 
-  <label for="position">Position:</label>
-  <input id="position" [(ngModel)]="newEmployee.position" name="position" required>
+  <div class="form-group">
+    <label for="position">Position:</label>
+    <input id="position" [(ngModel)]="newEmployee.position" name="position" required>
+  </div>
 
-  <label for="salary">Salary:</label>
-  <input id="salary" type="number" [(ngModel)]="newEmployee.salary" name="salary" required>
+  <div class="form-group">
+    <label for="salary">Salary:</label>
+    <input id="salary" type="number" [(ngModel)]="newEmployee.salary" name="salary" required>
+  </div>
 
-  <button type="submit">Add Employee</button>
+  <button type="submit" class="btn add-btn">Add Employee</button>
 </form>
 
 <!-- Employee List Table -->
-<h3>Employee List</h3>
-<table>
+<h3 class="subtitle">Employee List</h3>
+<table class="employee-table">
   <thead>
     <tr>
       <th>Name</th>
@@ -32,8 +38,8 @@
       <td>{{ employee.position }}</td>
       <td>{{ employee.salary }}</td>
       <td>
-        <button class="edit" (click)="editEmployee(employee)">Edit</button>
-        <button class="delete" (click)="deleteEmployee(employee.id)">Delete</button>
+        <button class="btn edit" (click)="editEmployee(employee)">Edit</button>
+        <button class="btn delete" (click)="deleteEmployee(employee.id)">Delete</button>
       </td>
     </tr>
   </tbody>
@@ -41,18 +47,24 @@
 
 <!-- Edit Employee Form -->
 <div *ngIf="editingEmployee" class="edit-form">
-  <h3>Edit Employee</h3>
+  <h3 class="subtitle">Edit Employee</h3>
   <form (submit)="updateEmployee()">
-    <label for="editName">Name:</label>
-    <input id="editName" [(ngModel)]="editingEmployee.name" name="editName" required>
+    <div class="form-group">
+      <label for="editName">Name:</label>
+      <input id="editName" [(ngModel)]="editingEmployee.name" name="editName" required>
+    </div>
 
-    <label for="editPosition">Position:</label>
-    <input id="editPosition" [(ngModel)]="editingEmployee.position" name="editPosition" required>
+    <div class="form-group">
+      <label for="editPosition">Position:</label>
+      <input id="editPosition" [(ngModel)]="editingEmployee.position" name="editPosition" required>
+    </div>
 
-    <label for="editSalary">Salary:</label>
-    <input id="editSalary" type="number" [(ngModel)]="editingEmployee.salary" name="editSalary" required>
+    <div class="form-group">
+      <label for="editSalary">Salary:</label>
+      <input id="editSalary" type="number" [(ngModel)]="editingEmployee.salary" name="editSalary" required>
+    </div>
 
-    <button type="submit">Update Employee</button>
-    <button type="button" class="cancel-btn" (click)="editingEmployee = null">Cancel</button>
+    <button type="submit" class="btn update-btn">Update Employee</button>
+    <button type="button" class="btn cancel-btn" (click)="editingEmployee = null">Cancel</button>
   </form>
 </div>
