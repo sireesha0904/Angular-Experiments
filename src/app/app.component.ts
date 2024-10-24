@@ -15,7 +15,6 @@ import { ViewChildComponent } from "./view-child/view-child.component";
 import { PracticeComponent } from "./practice/practice.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { RouterModule, RouterOutlet } from '@angular/router'; 
-import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
