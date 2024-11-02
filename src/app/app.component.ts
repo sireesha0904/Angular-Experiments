@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { FormComponent } from '../app/form/form.component'; 
+  import { Component } from '@angular/core';
+  import { FormComponent } from '../app/form/form.component'; 
 import { MenuComponent } from './menu/menu.component'; 
 import { LoginComponent } from './login/login.component';
 import { NumberCheckerComponent } from './number-checker/number-checker.component';
