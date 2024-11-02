@@ -1,11 +1,13 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-item-list',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './item-list.component.html',
-  styleUrls: ['./item-list.component.css'],
+  styleUrl: './item-list.component.css'
 })
+
 export class ItemListComponent implements OnInit, OnDestroy {
   items: string[] = ['Item 1', 'Item 2', 'Item 3'];
 
@@ -20,6 +22,11 @@ export class ItemListComponent implements OnInit, OnDestroy {
   addItem(): void {
     this.items.push(`Item ${this.items.length + 1}`);
     console.log('Item added:', this.items[this.items.length - 1]);
+  }
+
+  removeLastItem(): void {
+    const removedItem = this.items.pop(); // Removes the last item
+    console.log('Item removed:', removedItem);
   }
 
   ngOnDestroy(): void {
