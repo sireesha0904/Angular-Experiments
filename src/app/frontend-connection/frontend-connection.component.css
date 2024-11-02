@@ -1,116 +1,143 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  /* Title Styles */
-  .title {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    color: #333;
-  }
-  
-  /* Subtitle Styles */
-  .subtitle {
-    margin-top: 30px;
-    font-size: 1.8em;
-    color: #666;
-  }
-  
-  /* Form Styles */
+  font-family: 'Roboto', sans-serif;
+  background-color: #e8f0fe; /* Soft light background */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Title Styles */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #1a1a1a; /* Dark grey */
+}
+
+/* Subtitle Styles */
+.subtitle {
+  margin-top: 30px;
+  font-size: 1.8em;
+  color: #3c3c3c; /* Medium grey */
+}
+
+/* Centered Subtitle */
+.text-center {
+  text-align: center; /* Center the heading */
+}
+
+/* Form Styles */
+.employee-form, .edit-form {
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: auto;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #4a4a4a; /* Darker grey */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #6200ea; /* Purple */
+  outline: none;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #6200ea; /* Purple */
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  font-size: 1em;
+  margin-top: 10px;
+  width: 100%; /* Full width for buttons */
+}
+
+.btn:hover {
+  background-color: #5a00d1; /* Darker purple */
+  transform: translateY(-2px);
+}
+
+.add-btn {
+  background-color: #4caf50; /* Green */
+}
+
+.add-btn:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+/* Cancel Button Styles */
+.cancel-btn {
+  background-color: #f44336; /* Red */
+}
+
+.cancel-btn:hover {
+  background-color: #e53935; /* Darker Red */
+}
+
+/* Table Styles */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.employee-table th, .employee-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.employee-table th {
+  background-color: #6200ea; /* Purple */
+  color: white;
+}
+
+.employee-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey */
+}
+
+.employee-table tr:hover {
+  background-color: #e0e0e0; /* Slightly darker grey */
+}
+
+.employee-table td button {
+  margin-right: 5px;
+}
+
+/* Action Button Styles */
+.action-buttons {
+  display: flex; /* Use flexbox for side-by-side buttons */
+  justify-content: space-between; /* Space between the buttons */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 600px) {
   .employee-form, .edit-form {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: auto;
+    width: 100%; /* Full width on small screens */
   }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    color: #444;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: border-color 0.3s;
-  }
-  
-  input:focus {
-    border-color: #5c99d6; /* Blue */
-    outline: none;
-  }
-  
-  /* Button Styles */
+
   .btn {
-    background-color: #5c99d6; /* Blue */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
-    font-size: 1em;
+    width: 100%; /* Full width for buttons on small screens */
   }
-  
-  .btn:hover {
-    background-color: #4a82c8; /* Darker Blue */
-    transform: translateY(-1px);
-  }
-  
-  .add-btn {
-    margin-top: 10px;
-  }
-  
-  .cancel-btn {
-    background-color: #f44336; /* Red */
-  }
-  
-  .cancel-btn:hover {
-    background-color: #e53935; /* Darker Red */
-  }
-  
-  /* Table Styles */
-  .employee-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .employee-table th, .employee-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
-  }
-  
-  .employee-table th {
-    background-color: #5c99d6; /* Blue */
-    color: white;
-  }
-  
-  .employee-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .employee-table tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .employee-table td button {
-    margin-right: 5px;
-  }
-  
+}
