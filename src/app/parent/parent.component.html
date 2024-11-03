@@ -1,2 +1,14 @@
-<app-child [childMessage]="parentMessage" (messageEvent)="receiveMessage($event)"></app-child>
-<p>Received from child to parent: {{ messageFromChild }}</p>
+<div>
+    <h2>Parent Component</h2>
+    <p>{{ messageFromChild }}</p> <!-- Display message received from child -->
+  
+    <!-- Sending data to child and listening for the child's event -->
+    <app-child 
+      [childMessage]="parentMessage" 
+      (messageEvent)="receiveMessage($event)">
+      <p #projectedContent>This is projected content from Parent to Child</p> <!-- Projected content accessed by ContentChild -->
+    </app-child>
+  
+    <button (click)="childComponent.sendMessageToParent()">Trigger Child Method from Parent</button>
+  </div>
+  

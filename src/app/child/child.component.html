@@ -1,2 +1,7 @@
-<p>{{ childMessage }}</p>
-<button (click)="sendMessageToParent()">Send Message to Parent from Child</button>
+<div>
+    <h3>Child Component</h3>
+    <p>{{ childMessage }}</p> <!-- Displays the parent's message -->
+    <button (click)="sendMessageToParent()">Send Message to Parent</button>
+    <ng-content></ng-content> <!-- Placeholder for projected content from the parent -->
+  </div>
+  
