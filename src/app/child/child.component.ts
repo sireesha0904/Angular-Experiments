@@ -1,8 +1,9 @@
 import { Component, Input, Output, EventEmitter, ContentChild, AfterContentInit, ElementRef } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-child',
   standalone: true,
+  imports: [CommonModule],  // Added CommonModule to import necessary modules
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.css']
 })
@@ -20,4 +21,5 @@ export class ChildComponent implements AfterContentInit {
   sendMessageToParent() {
     this.messageEvent.emit('Message from Child');
   }
+  
 }
