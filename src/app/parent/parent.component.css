@@ -1,4 +1,9 @@
-p {
-    text-align: center;
-    color: brown;
-}
+div {
+    border: 1px solid #28a745;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  button {
+    margin-top: 15px;
+  }
+  
