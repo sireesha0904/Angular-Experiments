@@ -1,24 +1,28 @@
-<div style="text-align:center">
-    <h1>Angular ngIf Example</h1>
+<div class="profile-container">
+  <h1 class="profile-title">User Profile</h1>
 
-    <!-- Button to toggle the message -->
-    <button (click)="toggleDetails()">
-      {{ showDetails ? 'Hide Details' : 'Show Details' }}
+  <!-- Toggle Profile Section -->
+  <section class="toggle-profile">
+    <button (click)="toggleProfile()" class="toggle-button">
+      {{ showProfile ? 'Hide Profile' : 'Show Profile' }}
     </button>
-  
-    <!-- The paragraph element will be shown/hidden based on showDetails -->
-    <p *ngIf="showDetails">Welcome back, User!</p>
-  </div>
+    <div *ngIf="showProfile" class="profile-details">
+      <p [ngStyle]="{'color': textcolor}">Name: {{ userName }}</p>
+      <p [ngStyle]="{'color': textcolor}">Age: {{ userAge }}</p>
+    </div>
+  </section>
 
-  <!-- Use *ngFor to loop through the 'users' array and display each user -->
-  <div>
-    <h3 [ngStyle]="{'color': 'red'}">Student List</h3>
-  <ul>
-    <li *ngFor = "let Students of Students" >{{Students }}</li>
-  </ul>
-</div>
+  <!-- Friends List Section -->
+  <section class="friends-list">
+    <h3 class="friends-title">Friends List</h3>
+    <ul>
+      <li *ngFor="let friend of friends" class="friend-item">{{ friend }}</li>
+    </ul>
+  </section>
 
-<div>
-  <h1 [ngStyle]="{'color':textcolor}"> Hello !</h1>
-  <button (click)="changeColor()">Change the color here</button>
+  <!-- Change Text Color Section -->
+  <section class="color-section">
+    <h2 [ngStyle]="{'color': textcolor}">Profile Color Toggle</h2>
+    <button (click)="changeColor()" class="color-button">Change Text Color</button>
+  </section>
 </div>

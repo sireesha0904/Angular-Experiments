@@ -1,0 +1,125 @@
+/* General Container Styles */
+.profile-container {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Profile Title */
+  .profile-title {
+    color: #7A1CAC;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  
+  /* Toggle Profile Button */
+  .toggle-profile {
+    margin: 20px 0;
+  }
+  
+  .toggle-button {
+    padding: 12px 18px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #d41872;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .toggle-button:hover {
+    background-color: #ff5f6d;
+    transform: scale(1.05);
+  }
+  
+  /* Profile Details */
+  .profile-details {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Friends List Section */
+  .friends-list {
+    margin: 20px 0;
+  }
+  
+  .friends-title {
+    color: #4b0082;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .friend-item {
+    list-style: none;
+    font-size: 18px;
+    color: #555;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+  }
+  
+  .friend-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Color Change Section */
+  .color-section {
+    margin: 20px 0;
+  }
+  
+  .color-button {
+    padding: 12px 18px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7A1CAC;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .color-button:hover {
+    background-color: #a445b2;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .profile-container {
+      padding: 20px;
+    }
+    
+    .profile-title {
+      font-size: 24px;
+    }
+  
+    .toggle-button,
+    .color-button {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+    
+    .friend-item {
+      font-size: 16px;
+    }
+  }
+  
