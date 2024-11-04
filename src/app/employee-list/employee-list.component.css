@@ -1,53 +1,57 @@
 .employee-list-container {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 800px; 
-}
-
-h2 {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: #333;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    color: #7a1cac; /* primary color */
     margin-bottom: 20px;
-    font-weight: bold;
-}
-
-table {
+  }
+  
+  .employee-table {
     width: 100%;
     border-collapse: collapse;
-}
-
-thead {
-    background-color: #007bff; /* Header background color */
-    color: white; /* Header text color */
-}
-
-th, td {
-    padding: 12px 15px; /* Padding inside cells */
-    text-align: left; /* Align text to the left */
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f2f2f2; /* Zebra striping for even rows */
-}
-
-tbody tr:hover {
-    background-color: #e2e6ea; /* Highlight row on hover */
-}
-
-td {
-    border-bottom: 1px solid #dddddd; /* Add border between rows */
-}
-
-@media (max-width: 768px) {
-    th, td {
-        padding: 10px; /* Adjust padding for smaller screens */
-        font-size: 0.9rem; /* Slightly smaller text */
-    }
-
-    h2 {
-        font-size: 1.5rem; /* Adjust title size for smaller screens */
-    }
-}
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ebd3f8; /* soft border color */
+  }
+  
+  .employee-table th {
+    background-color: #7a1cac; /* primary color */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .employee-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  .employee-table tbody tr:nth-child(even) {
+    background-color: #ebd3f8; /* secondary color */
+  }
+  
+  .employee-table tbody tr:hover {
+    background-color: #d3b3eb; /* hover effect */
+  }
+  
+  .employee-table td {
+    color: #2e073f; /* dark text color */
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    transition: background-color 0.3s ease;
+  }
+  
