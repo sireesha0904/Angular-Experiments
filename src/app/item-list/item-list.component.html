@@ -1,6 +1,10 @@
-<h2>Item List</h2>
-<ul>
-  <li *ngFor="let item of items">{{ item }}</li>
-</ul>
-<button (click)="addItem()">Add Item</button>
-<button (click)="removeLastItem()">Remove Last Item</button>
+<div class="item-container">
+  <h2 class="item-heading">Item List</h2>
+  <ul class="item-list">
+    <li *ngFor="let item of items" class="item">{{ item }}</li>
+  </ul>
+  <div class="button-container">
+    <button (click)="addItem()" class="action-button">Add Item</button>
+    <button (click)="removeLastItem()" class="action-button">Remove Last Item</button>
+  </div>
+</div>
