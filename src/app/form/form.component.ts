@@ -15,10 +15,17 @@ export class FormComponent {
   counter: number = 0;
 
   handleSubmit(event: Event) {
-    event.preventDefault(); 
-    this.incrementCounter(); 
+    event.preventDefault();
+    this.incrementCounter();
   }
+
   incrementCounter() {
     this.counter++;
+  }
+
+  resetForm() {
+    this.name = '';
+    this.age = 0;
+    this.counter = 0;
   }
 }

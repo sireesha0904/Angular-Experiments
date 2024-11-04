@@ -1,55 +1,79 @@
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
 
-form {
-  background: linear-gradient(135deg, #7A1CAC, #d41872);
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  max-width: 400px;
-  width: 100%;
+h1 {
+  color: #7a1cac;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-form {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
 }
 
 label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  text-align: left; 
-  width: 100%; 
+  font-size: 1.1em;
+  color: #2e073f;
+  margin-bottom: 5px;
 }
 
-/* Input Styles */
 input[type="text"],
 input[type="number"] {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ebd3f8;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
 }
 
-button {
-  background-color: #EBD3F8;
-  color: #2E073F; 
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #7a1cac;
+}
+
+.submit-button {
+  padding: 10px 15px;
+  background-color: #7a1cac;
+  color: #fff;
   border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s;
-  width: 100%; 
+  transition: background-color 0.3s ease;
+  font-size: 1em;
 }
 
-
-button:hover {
-  background-color: #d41872; 
-  transform: translateY(-2px); 
+.submit-button:hover {
+  background-color: #9b59b6;
 }
 
-p {
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  text-align: center; 
+.info {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #2e073f;
+  text-align: center;
+}
+
+.reset-button {
+  padding: 8px 12px;
+  background-color: #ff5f6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.reset-button:hover {
+  background-color: #ff7f83;
 }
