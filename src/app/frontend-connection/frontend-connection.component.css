@@ -1,7 +1,8 @@
 /* General Styles */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #e8f0fe; /* Soft light background */
+  background-color: #f4f4f4; /* Light background for better contrast */
+  color: #333; /* Dark text for readability */
   margin: 0;
   padding: 20px;
 }
@@ -9,33 +10,31 @@ body {
 /* Title Styles */
 .title {
   text-align: center;
-  margin-bottom: 20px;
   font-size: 2.5em;
-  color: #1a1a1a; /* Dark grey */
+  color: #7A1CAC; /* Primary color */
+  margin-bottom: 30px;
 }
 
 /* Subtitle Styles */
 .subtitle {
-  margin-top: 30px;
   font-size: 1.8em;
-  color: #3c3c3c; /* Medium grey */
-}
-
-/* Centered Subtitle */
-.text-center {
-  text-align: center; /* Center the heading */
+  color: #7A1CAC; /* Matching color with the title */
+  text-align: center;
+  margin: 20px 0;
 }
 
 /* Form Styles */
 .employee-form, .edit-form {
-  background-color: #ffffff; /* White background */
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
   padding: 20px;
-  margin: auto;
-  max-width: 400px;
+  margin: 0 auto 30px;
+  width: 90%;
+  max-width: 600px; /* Limit width for larger screens */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
+/* Form Group Styles */
 .form-group {
   margin-bottom: 15px;
 }
@@ -43,101 +42,79 @@ body {
 label {
   display: block;
   margin-bottom: 5px;
-  color: #4a4a4a; /* Darker grey */
+  font-weight: bold;
+  color: #555; /* Subtle label color */
 }
 
-input {
+input[type="text"], input[type="number"] {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ddd;
   border-radius: 5px;
   transition: border-color 0.3s;
 }
 
-input:focus {
-  border-color: #6200ea; /* Purple */
-  outline: none;
+input[type="text"]:focus, input[type="number"]:focus {
+  border-color: #7A1CAC; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
 }
 
 /* Button Styles */
 .btn {
-  background-color: #6200ea; /* Purple */
+  background-color: #7A1CAC; /* Primary button color */
   color: white;
   border: none;
-  padding: 12px 15px;
   border-radius: 5px;
+  padding: 12px 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s;
   font-size: 1em;
+  transition: background-color 0.3s, transform 0.2s;
   margin-top: 10px;
   width: 100%; /* Full width for buttons */
 }
 
 .btn:hover {
-  background-color: #5a00d1; /* Darker purple */
-  transform: translateY(-2px);
+  background-color: #9b59b6; /* Lighter shade on hover */
+  transform: translateY(-2px); /* Slight lift effect */
 }
 
 .add-btn {
-  background-color: #4caf50; /* Green */
+  margin-bottom: 10px; /* Space below Add Employee button */
 }
 
-.add-btn:hover {
-  background-color: #45a049; /* Darker green */
-}
-
-/* Cancel Button Styles */
-.cancel-btn {
-  background-color: #f44336; /* Red */
-}
-
-.cancel-btn:hover {
-  background-color: #e53935; /* Darker Red */
-}
-
-/* Table Styles */
+/* Employee Table Styles */
 .employee-table {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  border-collapse: collapse; /* Remove space between cells */
+  margin: 20px 0;
+  background-color: #fff; /* Table background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for table */
 }
 
 .employee-table th, .employee-table td {
-  border: 1px solid #ddd;
   padding: 12px;
   text-align: left;
+  border-bottom: 1px solid #ddd; /* Separator line */
 }
 
 .employee-table th {
-  background-color: #6200ea; /* Purple */
-  color: white;
-}
-
-.employee-table tr:nth-child(even) {
-  background-color: #f2f2f2; /* Light grey */
+  background-color: #7A1CAC; /* Header background */
+  color: white; /* Header text color */
 }
 
 .employee-table tr:hover {
-  background-color: #e0e0e0; /* Slightly darker grey */
+  background-color: #f1f1f1; /* Highlight on row hover */
 }
 
-.employee-table td button {
-  margin-right: 5px;
+/* Edit Form Styles */
+.edit-form {
+  background-color: #fff; /* Same background as the employee form */
 }
 
-/* Action Button Styles */
-.action-buttons {
-  display: flex; /* Use flexbox for side-by-side buttons */
-  justify-content: space-between; /* Space between the buttons */
-}
-
-/* Media Query for Responsive Design */
-@media (max-width: 600px) {
-  .employee-form, .edit-form {
-    width: 100%; /* Full width on small screens */
-  }
-
-  .btn {
-    width: 100%; /* Full width for buttons on small screens */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .employee-form, .edit-form, .employee-table {
+      width: 95%; /* Increase width on smaller screens */
   }
 }
